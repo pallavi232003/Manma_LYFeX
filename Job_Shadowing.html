@@ -826,6 +826,108 @@
         text-transform: uppercase;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
+
+
+
+/*cta css*/
+     /*cta container*/
+    
+    .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .ctacontainer {
+        padding: 40px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(to bottom, #fff59d, #ffe082);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 50px auto;
+        width: 1200px;
+        height: 350px;
+    }
+    
+    .ctatext-section {
+        max-width: 50%;
+    }
+    
+    .ctatext-section h1,
+    .ctatext-section p {
+        color: #000;
+        margin-bottom: 10px;
+    }
+    
+    .ctatext-section h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .ctatext-section p {
+        font-size: 16px;
+    }
+    
+    .ctajoin-button {
+        margin-top: 20px;
+        display: inline-block;
+        background-color: #ffca28;
+        color: #000;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .ctajoin-button:hover {
+        background-color: #ffc107;
+    }
+    
+    .ctaimage-section {
+        width: 40%;
+        height: 100%;
+        background-color: #d3d3d3;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: #555;
+        font-weight: bold;
+    }
+    
+    @media (max-width: 780px) {
+        .cta {
+            padding: 20px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .ctatext-section h1 {
+            font-size: 20px;
+        }
+        .ctatext-section p {
+            font-size: 14px;
+        }
+        .ctajoin-button {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        .ctaimage-section {
+            height: 150px;
+        }
+    }
+
+    
+
+    
     /* footer css */
     
     footer {
@@ -1338,6 +1440,18 @@
     </script>
 
 
+ <div class="cta">
+        <div class="ctacontainer">
+            <div class="ctatext-section">
+                <h1>Welcome to LYFeX Job Shadowing Program</h1>
+                <p>Join LYFeX today and let children see a brighter tomorrow!</p>
+                <a href="#" class="ctajoin-button">Join Us</a>
+            </div>
+            <div class="ctaimage-section">
+                image
+            </div>
+        </div>
+    </div>
 
 
 
@@ -1357,7 +1471,7 @@
             <div class="footer-column" style="padding-left:0px ;">
                 <h3>Quick Links</h3>
                 <a href="#programs">Programs</a><br>
-                <a href="#jsworks">jsworks</a><br>
+                <a href="#testimonals">Testimonals</a><br>
                 <a href="#blog">Blog</a><br>
                 <a href="#faqs">FAQs</a><br>
                 <a href="#privacy-policy">Privacy Policy</a>
