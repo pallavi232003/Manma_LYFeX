@@ -817,6 +817,34 @@
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            const dropdownToggles = document.querySelectorAll('.dropbtn');
+
+            // Toggle the mobile menu
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            // Toggle the dropdown menu on click
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent the default link behavior
+                    const dropdownContent = toggle.nextElementSibling; // Get the dropdown content
+                    dropdownContent.classList.toggle('active'); // Toggle visibility of the dropdown
+
+                    // Close other dropdowns (optional, for better UX)
+                    dropdownToggles.forEach(otherToggle => {
+                        if (otherToggle !== toggle) {
+                            const otherDropdown = otherToggle.nextElementSibling;
+                            otherDropdown.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        </script>
     </nav>
 
 
