@@ -435,6 +435,95 @@
             padding: 10px 15px;
         }
     }
+
+
+
+
+/* why LYFEX*/
+    
+    .section-container {
+        padding: 20px;
+    }
+    
+    .yh2 {
+        font-size: 38px;
+        margin-bottom: 30px;
+        justify-content: center;
+        color: #bd9118;
+        display: flex;
+    }
+    /* Info Boxes Container */
+    
+    .info-box-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    /* Info Box Styling */
+    
+    .info-box {
+        background: linear-gradient(135deg, rgb(244, 240, 198), rgb(237, 227, 124), rgb(244, 240, 198));
+        border-radius: 10px;
+        width: 1150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(119, 91, 0);
+        font-size: 25px;
+        font-weight: bold;
+        transition: transform 0.3s ease, height 0.3s ease, width 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    /* Info Box Content */
+    
+    .info-content {
+        position: absolute;
+        opacity: 0;
+        font-size: 16px;
+        padding: 35px;
+        transition: opacity 0.3s ease;
+        text-align: left;
+    }
+    
+    .info-box:hover .info-content {
+        opacity: 1;
+    }
+    
+    .info-title {
+        z-index: 1;
+        font-size: 20px;
+    }
+    /* Responsive Design */
+    
+    @media (max-width: 768px) {
+        .info-box {
+            width: 270px;
+            height: 170px;
+        }
+        .info-content {
+            font-size: 14px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .info-box {
+            width: 250px;
+            height: 160px;
+        }
+        .info-content {
+            font-size: 12px;
+        }
+    }
+
+
+
+
+    
     /* how js works*/
     
     .jsworkcontainer {
@@ -447,7 +536,7 @@
         width: 340px;
         height: 260px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-        padding: 30px 30px 30px 30px;
+        padding: 30px 10px 30px 10px;
         margin: 50px 15px 30px 15px;
         overflow: hidden;
         position: relative;
@@ -494,7 +583,6 @@
     
     .jswork .description {
         font-size: 17px;
-        letter-spacing: 1.3px;
         color: black;
         line-height: 25px;
         margin: 15px;
@@ -1186,6 +1274,20 @@
         </div>
     </section>
 
+
+
+     <section id="how-lyfex-works" style="padding: 40px; text-align: center;">
+        <h2 style="font-size: 2rem; color: #ce8d00; margin-bottom: 20px;">How Shadowing Program Works</h2>
+        <div class="info-box-container">
+            <div class="info-box" id="mission">
+                <div class="info-title"> The LYFeX Job Shadowing Program is a transformative learning experience based on the principle of observation-designed to help students explore various career paths, develop cognitive skills, and gain clarity about their future. Through
+                    real-world exposure, students observe professionals, learn from their expertise, and discover their true interests in a supportive environment- It's completely self-learning.</div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
 
 
 
