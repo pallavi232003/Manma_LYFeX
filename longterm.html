@@ -503,7 +503,7 @@
         }
 
          .toggle-button-container {
-            display: grid;
+            display: grid !important;
             grid-template-columns: repeat(2, 1fr);
             /* 2 columns */
             gap: 10px;
@@ -512,8 +512,9 @@
         .join-in {
             width: 120px;
             font-size: 16px;
-            margin-right: 200px;
-            margin-top: 380px;
+            margin-right: 20px;
+            margin-top: 320px;
+            
         }
         .button {
             padding: 10px 15px;
@@ -592,6 +593,10 @@
         .info-content {
             font-size: 14px;
         }
+          .info-title {
+        z-index: 1;
+        font-size: 12px;
+    }
     }
     
     @media (max-width: 480px) {
@@ -602,6 +607,10 @@
         .info-content {
             font-size: 12px;
         }
+          .info-title {
+        z-index: 1;
+        font-size: 12px;
+    }
     }
 
 
