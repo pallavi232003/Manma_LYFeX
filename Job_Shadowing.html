@@ -306,7 +306,7 @@
     }
     /* Join Button Styling */
     
-    #join-button {
+     .join-in {
         background-color: #f0a500;
         color: black;
         border: none;
@@ -317,14 +317,36 @@
         font-weight: bold;
         border-radius: 20px;
         cursor: pointer;
-        margin-right:390px;
-        margin-top: 270px;
+         margin-right:390px;
+        margin-top: 290px;
         transition: background-color 0.3s ease;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
     
-    #join-buttonn:hover {
+    .join-button:hover {
         background-color: #c18c1a;
+    }
+    
+    .toggle-button-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .toggle-button-container button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .toggle-button-container button:hover {
+        background-color: #0056b3;
     }
     /* Responsive Design for Mobile Screens */
     
@@ -363,14 +385,19 @@
             text-align: center;
             margin: auto;
         }
-        .button-container {
+         .button-container {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
-        #join-button {
+        .toggle-button-container {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .join-in {
             padding: 12px 20px;
             font-size: 16px;
+            margin-right: 390px;
             margin-top: 250px;
             width: 100%;
             max-width: 200px;
@@ -379,7 +406,8 @@
         }
     }
     
-    @media (max-width: 1024px) {
+    
+    @media (max-width: 1200px) {
         .main-section {
             padding: 20px;
         }
@@ -394,7 +422,7 @@
         }
     }
     
-    @media (max-width: 643px) {
+    @media (max-width: 743px) {
         .main-section {
             background: url('2.png');
         }
@@ -425,20 +453,19 @@
             text-align: center;
             margin-top: 40px;
         }
-        #join-button {
-            width: 120px;
-            font-size: 16px;
-            margin: 0;
-            margin-top: 380px;
-        }
-         .toggle-button-container {
-            display: grid !important;
+        .toggle-button-container {
+            display: grid;
             grid-template-columns: repeat(2, 1fr);
             /* 2 columns */
             gap: 10px;
             /* Space between buttons */
         }
-        
+        .join-in {
+            width: 120px;
+            font-size: 16px;
+            margin: 0;
+            margin-top: 380px;
+        }
         .button {
             padding: 10px 15px;
         }
@@ -516,6 +543,10 @@
         .info-content {
             font-size: 14px;
         }
+        .info-title {
+        z-index: 1;
+        font-size: 14px;
+    }
     }
     
     @media (max-width: 480px) {
@@ -526,6 +557,10 @@
         .info-content {
             font-size: 12px;
         }
+        .info-title {
+        z-index: 1;
+        font-size: 14px;
+    }
     }
 
 
@@ -1275,9 +1310,8 @@
             <h2>Shadowing Program</h2>
             <p class="pp">Experience the Best to Learn the Best</p>
            <p class="pp">Join LYFeX today and let children see a brighter tomorrow!</p> -->
-            <button id="join-button" onclick="toggleButtonContainer()>Join In!</button>
+            <button class="join-in" onclick="toggleButtonContainer()">Join In</button>
         </div>
-
 
         <div class="toggle-button-container" id="button-container" style="display: none;">
             <a href="school form.html" class="button">Schools</a>
@@ -1287,7 +1321,7 @@
         </div>
     </section>
 
-     <script>
+    <script>
         function toggleButtonContainer() {
             const container = document.querySelector('.toggle-button-container');
             if (container.style.display === 'none') {
@@ -1300,6 +1334,7 @@
 
 
 
+    
 
      <section id="how-lyfex-works" style="text-align: center;">
          
